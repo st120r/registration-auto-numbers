@@ -6,7 +6,7 @@ public class Randomizer {
 
     public static char letter() {
         Random r = new Random();
-        String alphabet = "АВЕКМНОРСТУХ";
+        String alphabet = Constants.alphabet;
         char letter = 0;
         for (int i = 0; i < 1; i++) {
             letter = alphabet.charAt(r.nextInt(alphabet.length()));
@@ -16,7 +16,7 @@ public class Randomizer {
 
     public static char number() {
         Random r = new Random();
-        String alphabet = "123456789";
+        String alphabet = Constants.alphabetNumbers;
         char number = 0;
         for (int i = 0; i < 1; i++) {
             number = alphabet.charAt(r.nextInt(alphabet.length()));
